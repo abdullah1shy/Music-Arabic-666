@@ -1,9 +1,9 @@
 {
-    "name": "ميوزك كوبرا",
-    "logo": "https://telegra.ph/file/8dd5ef5b8ea6b2f4dbe95.jpg",
+    "name": "ميوزك بيكاسوس",
+    "logo": "https://telegra.ph/file/4178437eb9055c08ec4da.jpg",
     "description": "افضل سورسات التليكرام",
     "keywords": ["tgmusicbot", "voice chat", "telegram"],
-    "repository": "https://github.com/ERTWF/ASD",
+    "repository": "https://github.com/abdullah1shy/music",
     "stack": "container",
     "env": {
         "API_HASH": {
@@ -22,7 +22,7 @@
         "START_PIC": {
             "description": "صورة البوت مطلوبة",
             "required": true,
-            "value": "https://telegra.ph/file/254c862a85ccf3b86ee09.mp4"
+            "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg"
         },
         "BOT_TOKEN": {
             "description": "توكن بوتك حط",
@@ -36,12 +36,12 @@
         "PROFILE_CHANNEL": {
             "description": "رابط قناتك خلي .",
             "required": true,
-            "value": "https://t.me/VFF35"
+            "value": "https://t.me/J64jj"
         },
         "OWNER_USERNAME": {
             "description": "معرفك بدون@ كمطور",
             "required": true,
-            "value": "QABNADLIB"
+            "value": "JJ64J"
         },
         "STRING_SESSION": {
             "description": "كود بايروجرام",
@@ -50,18 +50,18 @@
         "SUDO_USERS": {
             "description": "ايدي المطورين حط ايديك كمطور",
             "required": true,
-            "value": "1939538780"
+            "value": "1898184845"
             
         },
         "SUPPORT_GROUP": {
             "description": "رابط كروب الدعم حطه",
             "required": true,
-            "value": "https://t.me/faqek"
+            "value": "https://t.me/PP6P3"
         },
         "UPDATES_CHANNEL": {
-            "description": "رابط قناتك الثانيه ازا ماعندك غير وحده حطو نفس يلي فوك",
+            "description": "رابط قناتك الثانيه اذا ماعندك غير وحده حط نفس يلي فوك",
             "required": true,
-            "value": "https://t.me/VFF34"
+            "value": "https://t.me/KKKT6"
         }
     },
     "buildpacks": [
