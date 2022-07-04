@@ -12,9 +12,9 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("**`هاد حمار وش تبي اهين بي ...`**")
+        wtf = await message.reply("**`هاد حمار شنو تريد اهين بي ...`**")
         if not message.reply_to_message:
-            await wtf.edit("**صار لك جرجف انجب وزا تندك بسيادك اكتلك وزرب على كبرك 🖐💩 ...**")
+            await wtf.edit("**صار لك جرجف انجب وذا تندك بسيادك اكتلك وزرب على كبرك 🖐💩 ...**")
             return
         lmao = message.reply_to_message.text
         async for dialog in aditya.iter_dialogs():
