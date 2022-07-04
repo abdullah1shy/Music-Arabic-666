@@ -17,7 +17,7 @@
         "ASSISTANT_USERNAME": {
             "description": "معرف حساب المساعد بدون '@')",
             "required": true,
-            "value": "ABNADLlB"
+            "value": "cc_rz1bot"
         },
         "START_PIC": {
             "description": "صورة البوت مطلوبة",
