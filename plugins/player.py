@@ -148,18 +148,18 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "** تم دخولي هههه  ...**")
+                        message.chat.id, "** اني اجيت يلا شغلوو هههه 😂😇 ...**")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**نعتذر ياطيب الحساب المساعد محظور او مقيد من القروب  @{ASSISTANT_USERNAME} بتقدر تحكي مع مطوري لتحل المشكلة@{OWNER_USERNAME} ✨ **")
+                        f"**نعتذر حياتي الحساب المساعد محظور او مقيد من الكروب  @{ASSISTANT_USERNAME} بتقدر تحكي مع مطوري لتحل المشكلة@{OWNER_USERNAME} ✨ **")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**نعتذر ياطيب الحساب المساعد محظور او مقيد من القروب  @{ASSISTANT_USERNAME} بتقدر تحكي مع مطوري لتحل المشكلة @{OWNER_USERNAME}) ✨ **")
+            f"**نعتذر حياتي الحساب المساعد محظور او مقيد من الكروب  @{ASSISTANT_USERNAME} بتقدر تحكي مع مطوري لتحل المشكلة @{OWNER_USERNAME}) ✨ **")
         return
     
     audio = (
@@ -301,7 +301,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit(
-                "**🤖 عــــليك الــــرد ع مــلف صـوتي او كـــتابة اســم الاغــنيه ياطــيب...**"
+                "**🤖 عــــليك الــــرد ع مــلف صـوتي او كـــتابة اســم الاغــنيه يحلوو...**"
             )
         await lel.edit("**🔄 يـــتم التــشغيل ...**")
         query = message.text.split(None, 1)[1]
@@ -328,7 +328,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "** اكتب الاسم صح ياورع...**"
+                "** اكتب الاسم بشكل صحيح ...**"
             )
             print(str(e))
             return
@@ -374,7 +374,7 @@ async def play(_, message: Message):
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
             photo="final.png",
-            caption="** ابشر يا طيب راح اشغلها لك بعد الاغنيه الشغاله ...**".format(position),
+            caption="**   راح اشغلها لك بعد الاغنيه الشغاله ...**".format(position),
             reply_markup=keyboard,
         )
     else:
@@ -391,20 +391,20 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**💥 ابشر بعزك تم التشغيل ياغالي تدلل ...**".format(),
+            caption="**❤️‍🔥  تم التشغيل  تدلل ...**".format(),
            )
 
     os.remove("final.png")
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["استئناف", ".pause", "/pause", "!pause"]) & other_filters)
+@Client.on_message(commandpro(["بدء", ".pause", "/pause", "!pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await message.delete()
     await clientbot.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("**▶️ تم ياطيب استئناف الغنيه ...**"
+    await message.reply_text("**▶️ تم  استئناف الاغنيه ...**"
     )
 
 
@@ -414,7 +414,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await clientbot.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("**⏸ ابشر تم استمرار الغنيه ...**"
+    await message.reply_text("**⏸  تم استمرار الغنيه ...**"
     )
 
 
@@ -430,12 +430,12 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**💥 لايوجد شيئ شغال ياطيب...**")
+        await message.reply_text("**لايوجد شيئ شغال ❤️‍🔥...**")
     else:
         queues.task_done(chat_id)
         
         if queues.is_empty(chat_id):
-            await message.reply_text("**🙄 ياغالي مافي شي شغال  ...**") 
+            await message.reply_text("**❤️‍🔥  ماكو شي مشتغل  ...**") 
             await clientbot.pytgcalls.leave_group_call(chat_id)
         else:
             await message.reply_text("**⏩ جاري التخطي ...**") 
@@ -461,7 +461,7 @@ async def stop(_, message: Message):
         pass
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("**مافي شي مشتغل ️...**"
+    await message.reply_text("**ماكو  شي مشتغل ️...**"
     )
 
 
