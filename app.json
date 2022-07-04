@@ -22,7 +22,7 @@
         "START_PIC": {
             "description": "صورة البوت مطلوبة",
             "required": true,
-            "value": "https://telegra.ph/file/752ff2d950edf61d04820.jpg"
+            "value": "https://telegra.ph/%D8%A7%D9%87%D9%84%D8%A7-%D8%B9%D9%85%D8%B1%D9%8A-%D9%87%D8%A7%D9%8A-%D8%A7%D9%88%D8%A7%D9%85%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%AA-07-03"
         },
         "BOT_TOKEN": {
             "description": "توكن بوتك حط",
