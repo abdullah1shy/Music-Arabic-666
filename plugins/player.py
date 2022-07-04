@@ -97,9 +97,9 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("resource/font.otf", 32)
-    draw.text((190, 550), f"Title: {title[:50]} ...", (255, 255, 255), font=font)
-    draw.text((190, 590), f"Duration: {duration}", (255, 255, 255), font=font)
-    draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((190, 550), f"تاريخ النشر 🧭: {title[:50]} ...", (255, 255, 255), font=font)
+    draw.text((190, 590), f"المدة ⌛: {duration}", (255, 255, 255), font=font)
+    draw.text((190, 630), f"المشاهدات 👁️: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
         f"Powered By: ZEUS",
