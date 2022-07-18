@@ -1,5 +1,5 @@
 {
-    "name": "ميوزك بيكاسوس",
+    "name": "ميوزك عبيد",
     "logo": "https://telegra.ph/file/4178437eb9055c08ec4da.jpg",
     "description": "افضل سورسات التليكرام",
     "keywords": ["tgmusicbot", "voice chat", "telegram"],
@@ -17,7 +17,7 @@
         "ASSISTANT_USERNAME": {
             "description": "معرف حساب المساعد بدون '@')",
             "required": true,
-            "value": "cc_rz1bot"
+            "value": "JJ64J"
         },
         "START_PIC": {
             "description": "صورة البوت مطلوبة",
@@ -31,7 +31,7 @@
         "BOT_USERNAME": {
             "description": "معرف بوتك بدون '@')",
             "required": true,
-            "value": "RREWQYUBOT"
+            "value": "cc_rz1bot"
         },
         "PROFILE_CHANNEL": {
             "description": "رابط قناتك خلي .",
