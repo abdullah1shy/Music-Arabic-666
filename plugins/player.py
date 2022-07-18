@@ -398,13 +398,13 @@ async def play(_, message: Message):
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["بدء", ".pause", "/pause", "!pause"]) & other_filters)
+@Client.on_message(commandpro(["اوكف", ".pause", "/pause", "!pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await message.delete()
     await clientbot.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("**▶️ تم  استئناف الاغنيه ...**"
+    await message.reply_text("**▶️ تم  ايقاف الاغنيه ...**"
     )
 
 
@@ -414,12 +414,12 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await clientbot.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("**⏸  تم استمرار الغنيه ...**"
+    await message.reply_text("**⏸  تم استمرار الاغنيه ...**"
     )
 
 
 
-@Client.on_message(commandpro(["تخطي", ".skip", "/skip", "عدي"]) & other_filters)
+@Client.on_message(commandpro(["تخطي", ".skip", "/skip", "كافي"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
@@ -430,12 +430,12 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**لايوجد شيئ شغال ❤️‍🔥...**")
+        await message.reply_text("*تدلل مولاي  🗿 ❤️‍🔥...**")
     else:
         queues.task_done(chat_id)
         
         if queues.is_empty(chat_id):
-            await message.reply_text("**❤️‍🔥  ماكو شي مشتغل  ...**") 
+            await message.reply_text("**❤️‍🔥  امرك سيدي ومولاي    ...**") 
             await clientbot.pytgcalls.leave_group_call(chat_id)
         else:
             await message.reply_text("**⏩ جاري التخطي ...**") 
@@ -450,7 +450,7 @@ async def skip(_, message: Message):
 
 
 
-@Client.on_message(commandpro(["end", "/end", "!end", ".end", "ايقاف", "/stop", ".stop", "وقف", "x"]) & other_filters)
+@Client.on_message(commandpro(["end", "/end", "!end", ".end", "ايقاف", "/stop", ".stop", "وقف", "اسكت"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
