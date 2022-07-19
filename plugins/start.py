@@ -17,9 +17,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 async def start_private(client: Client, message: Message):
  await message.reply_photo(
         photo=f"{START_PIC}",
-        caption=f"""**💥 اهلا بك اختصاص هذا البوت 
-تشغيل الاغاني في المكالمات الصوتية » 
-لمعرفة الاوامر عليك النقر على زر الاوامر.**""",
+        caption=f"""**🎯اهلا بك  انا بوت كريتوس 
+☑️تشغيل الاغاني في المكالمات الصوتية » 
+⬇️لمعرفة الاوامر عليك النقر على زر الاوامر.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
