@@ -154,7 +154,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**نعتذر حياتي الحساب المساعد محظور او مقيد من الكروب  @{ASSISTANT_USERNAME} بتقدر تحكي مع مطوري لتحل المشكلة@{OWNER_USERNAME} ✨ **")
+                        f"**نعتذر حياتي الحساب المساعد محظور او مقيد من الكروب  @{ASSISTANT_USERNAME}  تكدر تتكلم ويه مطوري لتحل المشكلة @{OWNER_USERNAME} ✨ **")
     try:
         await USER.get_chat(chid)
     except:
@@ -177,7 +177,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/8d18e1e24e7b66b822144.png"
+        thumb_name = "https://telegra.ph/file/4410f8300b409349b110b.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -262,7 +262,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/8d18e1e24e7b66b822144.png"
+            thumb_name = "https://telegra.ph/file/4410f8300b409349b110b.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
